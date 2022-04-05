@@ -2378,6 +2378,10 @@ video {
   background-color: rgba(30, 58, 138, var(--tw-bg-opacity));
 }
 
+.bg-blue-905 {
+  background-color: #e4f0f5;
+}
+
 .bg-indigo-50 {
   --tw-bg-opacity: 1;
   background-color: rgba(238, 242, 255, var(--tw-bg-opacity));
@@ -2526,6 +2530,10 @@ video {
 .bg-pink-900 {
   --tw-bg-opacity: 1;
   background-color: rgba(131, 24, 67, var(--tw-bg-opacity));
+}
+
+.bg-grey-100 {
+  background-color: #FAFAFB;
 }
 
 .bg-bookmark-purple {
@@ -11721,6 +11729,10 @@ video {
   font-weight: 700;
 }
 
+.font-boldi {
+  font-weight: 750;
+}
+
 .font-extrabold {
   font-weight: 800;
 }
@@ -11972,6 +11984,11 @@ video {
 
 .text-2xl {
   font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.text-17xl {
+  font-size: 1.75rem;
   line-height: 2rem;
 }
 
@@ -13320,6 +13337,14 @@ video {
   margin-left: 4rem;
 }
 
+.ml-17 {
+  margin-left: 4.125 rem;
+}
+
+.mr-18 {
+  margin-right: 4.5rem;
+}
+
 .mt-20 {
   margin-top: 5rem;
 }
@@ -14416,6 +14441,10 @@ video {
   max-width: 80rem;
 }
 
+.max-w-8xl {
+  max-width: 100rem;
+}
+
 .max-w-full {
   max-width: 100%;
 }
@@ -15425,6 +15454,11 @@ video {
   padding-right: 20rem;
 }
 
+.px-92 {
+  padding-left: 23rem;
+  padding-right: 23rem;
+}
+
 .py-96 {
   padding-top: 24rem;
   padding-bottom: 24rem;
@@ -15967,6 +16001,10 @@ video {
 
 .pl-96 {
   padding-left: 24rem;
+}
+
+.pl-100 {
+  padding-left: 26rem;
 }
 
 .pt-px {
@@ -25202,6 +25240,18 @@ video {
   color: rgba(30, 58, 138, var(--tw-text-opacity));
 }
 
+.text-blue-901 {
+  color: #083959;
+}
+
+.text-blue-902 {
+  color: #265f82;
+}
+
+.text-blue-903 {
+  color: #8cb4cf;
+}
+
 .text-indigo-50 {
   --tw-text-opacity: 1;
   color: rgba(238, 242, 255, var(--tw-text-opacity));
@@ -26481,6 +26531,10 @@ video {
   color: rgba(6, 78, 59, var(--tw-text-opacity));
 }
 
+.hover\:text-green-901:hover {
+  color: #89C442;
+}
+
 .hover\:text-blue-50:hover {
   --tw-text-opacity: 1;
   color: rgba(239, 246, 255, var(--tw-text-opacity));
@@ -26529,6 +26583,10 @@ video {
 .hover\:text-blue-900:hover {
   --tw-text-opacity: 1;
   color: rgba(30, 58, 138, var(--tw-text-opacity));
+}
+
+.hover\:text-blue-902:hover {
+  color: #265f82;
 }
 
 .hover\:text-indigo-50:hover {
@@ -60037,6 +60095,10 @@ video {
 
   .sm\:w-3\/4 {
     width: 75%;
+  }
+
+  .sm\:w-3\/8 {
+    width: 100%;
   }
 
   .sm\:w-1\/5 {
