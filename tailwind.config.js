@@ -1,4 +1,11 @@
 module.exports = {
+  theme: {
+    // ...
+  },
+  plugins: [
+    require('@tailwindcss/aspect-ratio'),
+    // ...
+  ],
   purge: [],
   darkMode: false, // or 'media' or 'class'
   theme: {
