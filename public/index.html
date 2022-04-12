@@ -13,10 +13,6 @@
     />
     <link rel="stylesheet" href="./style.css" />
 
-    <!-- slider -->
-
-    <!-- /slider -->
-
     <!--test-->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css">
@@ -31,9 +27,9 @@
     <!-- Header -->
     <header class="bg-bookmark-blue px-34 h-25">
       <nav class="bg-bookmark-blue container flex items-center h-25">
-        <div class="px-3 py-12 w-53"><img src="https://info.hracuity.com/wp-content/uploads/2022/03/HR_Acuity_Logo.png" alt="" /></div>
+        <div class="px-3 ml-20 py-12 w-53"><img src="https://info.hracuity.com/wp-content/uploads/2022/03/HR_Acuity_Logo.png" alt="" /></div>
         <ul class="hidden sm:flex flex-1 justify-end items-center gap-8 text-sm">
-          <button type="button" class="text-white bg-red-550 hover:bg-green-901 rounded px-10 py-3 font-extrabold" >Book a Demo</button>
+          <button type="button" class="text-white mr-18 bg-red-550 hover:bg-green-901 rounded px-8 py-3 font-extrabold" >Book a Demo</button>
         </ul>
         <div class="flex sm:hidden flex-1 justify-end">
           <i class="text-2xl fas fa-bars"></i>
@@ -99,9 +95,8 @@
   </div>
 </div>
 
-    <!-- Features -->
+    <!-- Feature #1 -->
     <section class="bg-white py-8">
-      <!-- Heading -->
       <div class="max-w-full px-2 ">
         <h1 class="py-1 text-3xl text-center text-blue-901 font-bold">Organizations like yours are building better</h1>
         <h1 class="py-1 text-3xl text-center text-blue-901 font-bold">workplaces with HR Acuity</h1>
@@ -220,7 +215,7 @@
       </div>
     </section>
 
-    <!-- Feature #1 -->
+    <!-- Feature #2 -->
 <div class="py-12 bg-grey-100">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="lg:text-center">
@@ -233,9 +228,7 @@
     </div>
 </div>
 
-    <!-- Feature #2 -->
-
-<!--TESTTT-->
+    <!-- Feature #3 -->
 <div class="py-12 bg-white">
   <div class="max-w-full ">
 
@@ -320,8 +313,8 @@
       </dl>
   </div>
 </div>
-<!--TESTTT-->
 
+<!-- Feature #4 -->
 <section class="bg-white mt-24 max-w-full relative block">
   <div x-data="{swiper: null}"
       x-init="swiper = new Swiper($refs.container, {
@@ -417,83 +410,99 @@
   </div>
 </section>
 
-<!--TEST-->
-<section class="bg-white py-8">
-  <!-- Heading -->
-  <div class="max-w-full px-2 ">
-      <!-- Slider -->
-      <div x-data="{swiper: null}"
-      x-init="swiper = new Swiper($refs.container, {
-          slidesPerView: 1,
-          items:4,
-      
-          breakpoints: {
-            640: {
-              slidesPerView: 1,
-              spaceBetween: 0,
-            },
-            768: {
-              slidesPerView: 1,
-              spaceBetween: 0,
-            },
-            1024: {
-              slidesPerView: 1,
-              spaceBetween: 0,
-            },
-          },
-        })"
-      class="relative max-w-full mx-auto flex flex-row px-92">
-    
-      <div class="swiper-container m-12 inline-block" x-ref="container">
-        <div class="swiper-wrapper">
-          <!-- Slides -->
-          <div class="swiper-slide px-4">
-            <div class="flex flex-col ">
-              <div class="flex-shrink-0">
-                <img class="swiper-slide-image " src="https://info.hracuity.com/wp-content/uploads/2022/03/Easily-document-and-manage-employee-cases.svg">
-              </div>
-            </div>
-          </div>
-
-          <div class="swiper-slide px-4">
-            <div class="flex flex-col ">
-              <div class="flex-shrink-0">
-                <img class="swiper-slide-image" src="https://info.hracuity.com/wp-content/uploads/2022/03/Conduct-best-practice-investigations-2.svg">
-              </div>
-            </div>
-          </div>
-
-          <div class="swiper-slide px-4">
-            <div class="flex flex-col ">
-              <div class="flex-shrink-0">
-                <img class="swiper-slide-image" src="https://info.hracuity.com/wp-content/uploads/2022/03/Uncover-trends-with-forward-looking-analytics-1.svg">
-              </div>
-            </div>
-          </div>
-
-          <div class="swiper-slide px-4">
-            <div class="flex flex-col ">
-              <div class="flex-shrink-0">
-                <img class="swiper-slide-image" src="https://info.hracuity.com/wp-content/uploads/2022/03/Drive-events-based-intelligence.svg">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>    
+<!--Customer Spotlight-->
+<section>
+  <div class="relative container mx-auto pt-8 bg-blue-905 max-w-6xl mb-36 h-96">
+    <h2 class="text-center font-extrabold text-4xl text-blue-901 font-Poppins">Customer spotlight</h2>
+    <div class="container relative">
+      <button id="playButton" class="absolute modal-open ml-97 mt-56 mx-52 w-18 h-18 bg-blue-901 rounded-full grid place-items-center hover:bg-purple-400 transition">
+        <svg class="ml-1 w-6" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M15 7.26795C16.3333 8.03775 16.3333 9.96225 15 10.7321L3 17.6603C1.66667 18.4301 1.01267e-06 17.4678 1.07997e-06 15.9282L1.68565e-06 2.0718C1.75295e-06 0.532196 1.66667 -0.430054 3 0.339746L15 7.26795Z" fill="white"></path>
+        </svg>
+      </button>
+      <img class="mx-auto mt-6" src="https://info.hracuity.com/wp-content/uploads/2022/03/video-overlay.jpg">
     </div>
   </div>
-</section>
-<!--TEST-->
-
-<!--Customer Spotlight-->
-<div class="container mx-auto py-12 bg-blue-905 max-w-5xl mb-36">
-  <div class="pl-20 aspect-w-48 aspect-h-27">
-  <iframe src="https://f.hubspotusercontent20.net/hubfs/2930928/Bay-area%20Video%20October%202021_Final.mp4" frameborder="0" allow="accelerometer; autoplay:false ; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <!--Modal-->
+  <div class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center ">
+    <div class="modal-overlay relative w-full h-full bg-blue-550 opacity-95 ">
+      <div class="modal-container fixed w-full h-full z-50">
+        <div id="modalclose" class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-orange text-lg z-50">
+          <svg class="h-12 w-12 text-orange" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"></path>  <line x1="18" y1="6" x2="6" y2="18"></line>  <line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </div>
+        <!-- Add margin if you want to see grey behind the modal-->
+        <div class="container mx-auto h-auto p-4 bg-blue-550">
+          <!--Body-->
+          <video id="myVideo" class="" src="https://f.hubspotusercontent20.net/hubfs/2930928/Bay-area%20Video%20October%202021_Final.mp4" controls="controls" controlslist="nodownload" poster="https://info.hracuity.com/wp-content/uploads/2022/03/video-overlay.jpg"></video>
+        </div>
+      </div>
+    </div>
   </div>
-</div>
+  <script>
+    var openmodal = document.querySelectorAll('.modal-open');
+    var video = document.getElementById("myVideo");
+    for (var i = 0; i < openmodal.length; i++) {
+      openmodal[i].addEventListener('click', function(event){
+      document.body.style.overflowY = "hidden";
+      event.preventDefault();
+      toggleModal();
+      video.currentTime=0;
+      video.play();
+      })
+    }
+    const overlay = document.querySelector('.modal-overlay')
+    overlay.addEventListener('click', toggleModal)
+    
+    var closemodal = document.querySelectorAll('#modalclose')
+    for (var i = 0; i < closemodal.length; i++) {
+      closemodal[i].addEventListener('click', toggleModalClose);
+    }
+    var isEscape = false;
+    document.onkeydown = function(evt) {
+      evt = evt || window.event;
 
-<!-- Feature-4 -->
-<div class="py-12 bg-gray-902">
+      if ("key" in evt) {
+      isEscape = (evt.key === "Escape" || evt.key === "Esc")
+      } else {
+      isEscape = (evt.keyCode === 27)
+      }
+
+      if (isEscape && document.body.classList.contains('modal-active')) {
+        toggleModalClose();
+      }
+    };
+    function toggleModal() {
+      const body = document.querySelector('body');
+      const modal = document.querySelector('.modal');
+      modal.classList.toggle('opacity-0');
+      modal.classList.toggle('pointer-events-none');
+      body.classList.toggle('modal-active');
+    }
+    function toggleModalClose() {
+      toggleModal();
+      document.body.style.overflowY = "auto";
+      video.pause();
+    }
+  </script>
+</section>
+
+<!-- TEST -->
+<div class="py-12 bg-gray-902 mt-96">
+  <div class="pl-32 pb-12">
+    <h1 class="pt-9 pl-72 text-4xl font-extrabold text-blue-901">Make best practice your process</h1>
+  </div>
+  <div class="flex relative pl-32 py-8 hover:bg-blue-905">
+    <div class="pl-72 pr-48 ">
+    <h2 class="text-xxl font-bold text-blue-901">Documentation</h2>
+  </div>
+    <div class="flex w-full pl-12 pr-96">
+      <p class="pr-12 text-xxl text-blue-901">Document issues with consistency, store all information in a centralized repository and access your data whenever you need it.</p>
+    </div>
+</div>
+<!-- TEST -->
+
+<!-- Feature #5 -->
+<div class="py-12 bg-gray-902 mt-96">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="lg:text-center">
       <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">Make best practice your process</p>
@@ -501,19 +510,20 @@
 
     <div class="mt-10">
       <dl class="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
-        <div class="relative">
+        <div class="relative group group-hover:bg-blue-905">
           <dt>
-            <p class="ml-16 text-lg leading-6 font-medium text-gray-900">Documentation</p>
+            <p class="ml-20 text-lg leading-6 font-bold text-blue-901">Documentation</p>
+            <div class="opacity-0 group-hover:opacity-100 duration-300 absolute left-0 bottom-0 right-0 z-10 flex pl-28 items-end text-xl bg-blue-905 text-black font-semibold">Learn More</div>
           </dt>
         </div>
 
         <div class="relative">
-          <dd class="mt-2 ml-16 text-base text-gray-500">Document issues with consistency, store all information in a centralized repository and access your data whenever you need it.</dd>
+          <dd class="mt-2 ml-20 text-base text-gray-500">Document issues with consistency, store all information in a centralized repository and access your data whenever you need it.</dd>
         </div>
 
         <div class="relative">
           <dt>
-            <p class="ml-16 text-lg leading-6 font-medium text-gray-900">Investigations</p>
+            <p class="ml-20 text-lg leading-6 font-medium text-gray-900">Investigations</p>
           </dt>
         </div>
 
@@ -538,6 +548,83 @@
 <div class="justify-center flex flex-wrap gap-6 mt-8 mb-56">
   <button type="button" class="bg-red-550 text-white hover:bg-green-901 rounded px-10 py-3 font-extrabold " >Book a Demo</button>
 </div>
+
+<!--TEST-->
+<div class="relative bg-white overflow-hidden mb-8">
+  <div class="max-w-full pl-76 ">
+    <div class="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-3xl lg:w-full lg:pb-28 xl:pb-32">
+      <main class="max-w-full pl-28 mt-9 sm:mt-9 md:mt-9 lg:mt-9 xl:mt-9">
+        <div class="flex flex-1 flex-col items-center lg:items-start">
+          <h2 class="text-blue-901 text-5xl mb-6 font-bold">
+            Reach out to us!
+          </h2>
+          <h2 class="text-blue-902 text-xl mb-6 font-bold">
+            Ready to get started? Need more information?
+          </h2>
+          <form>
+            <div class="mb-4">
+              <label for="firstname" class="block mb-1 text-base text-blue-902 ">First name</label>
+              <input type="firstname" id="firstname" class="bg-blue-905 text-blue-902 font-bold text-base rounded px-2 py-2 max-w-full min-w-full" required>
+            </div>
+            <div class="mb-4">
+              <label for="firstname" class="block mb-1 text-base text-blue-902 ">Email*</label>
+              <input type="firstname" id="firstname" class="bg-blue-905 text-blue-902 font-bold text-base rounded px-2 py-2 max-w-full min-w-full" required>
+            </div>
+            <div class="mb-4">
+              <label for="firstname" class="block mb-1 text-base text-blue-902 ">Number of employees*</label>
+              <div class="inline-block relative w-97">  
+                <select class="block appearance-none w-full bg-blue-905 hover:border-black px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
+                  <option>1-500</option>
+                  <option>501-1,000</option>
+                  <option>1,001-5,000</option>
+                  <option>5,001-10,000</option>
+                  <option>10,001-49,999</option>
+                  <option>50,000+</option>
+                </select>
+                <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                  <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+                </div>
+              </div>
+            </div>
+            <div class="mb-4">
+              <label for="firstname" class="block mb-1 text-base text-blue-902 ">I'm Interested In...*</label>
+              <div class="inline-block relative w-97">  
+                <select class="block appearance-none w-full bg-blue-905 hover:border-black px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
+                  <option>Requesting a Demo</option>
+                  <option>Pricing Details</option>
+                  <option>Customer Support</option>
+                  <option>Employment Opportunities</option>
+                  <option>Other</option>
+                </select>
+                <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                  <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+                </div>
+              </div>
+            </div>
+            <div class="flex items-start mb-6">
+              <div class="flex items-center h-5">
+                <input id="remember" aria-describedby="remember" type="checkbox" class="w-4 h-4 bg-gray-50 rounded border border-gray-300 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800" required>
+              </div>
+              <div class="ml-3 text-sm">
+                <label for="remember" class="font-medium text-blue-902 dark:text-gray-300">Signup for our newsletter!</label>
+              </div>
+            </div>
+          </form>
+          <div class="flex justify-center flex-wrap gap-6">
+            <button type="button" class="bg-red-550 text-white hover:bg-green-901 rounded px-14 py-3 font-extrabold" >Submit</button>
+          </div>
+          <div class="flex">
+            <p class="text-xs py-8 text-gray-600 font-semibold pr-32">We need your contact information to contact you about our products and services. You may unsubscribe from these communications any time. For information on how to unsubscribe, as well as our privacy practices, see our <a class="text-blue-500 hover:text-red-500 underline underline-offset-8" href="https://www.hracuity.com/privacy-policy" target="_blank">Privacy Policy</a></p>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+  <div class="absolute lg:inset-y-0 lg:right-0 lg:w-1/3">
+    <img class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full" src="./imgs/banner2.png" alt="">
+  </div>
+</div>
+<!--/TEST-->
 
 <!-- Contact Us -->
 <div class="relative bg-white overflow-hidden mb-8">
@@ -620,40 +707,51 @@
       </main>
     </div>
   </div>
-  <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/3">
+  <div class="absolute lg:inset-y-0 lg:right-0 lg:w-1/3">
     <img class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full" src="./imgs/banner2.png" alt="">
   </div>
 </div>
 
     <!--Awards-->
-    <div class="relative max-w-full mx-auto flex flex-row px-92 py-12 bg-blue-10">
+    <div class="relative max-w-full mx-auto flex flex-row px-92 py-8 bg-blue-10">
       <div class="max-w-full mx-auto items-center">
         <div class="lg:text-center">
           <h2 class="mt-2 leading-8 font-bold text-blue-902 text-2xl pb-6">Awards</h2>
           <div class="flex container mx-auto items-center">
-            <img class="h-28 w-auto mx-3" src="https://info.hracuity.com/wp-content/uploads/2022/03/gptw.png" alt="">
-            <img class="h-32 w-auto mx-3" src="https://info.hracuity.com/wp-content/uploads/2022/03/FortuneBestSmallMedium2021.jpeg" alt="">
-            <img class="h-32 w-auto mx-3" src="https://info.hracuity.com/wp-content/uploads/2022/03/FortuneBestNewYork2021.jpeg" alt="">
-            <img class="h-32 w-auto mx-3" src="https://info.hracuity.com/wp-content/uploads/2022/03/Optimas-2018-Gold-Award-260px.png" alt="">
-            <img class="h-32 w-auto mx-3" src="https://info.hracuity.com/wp-content/uploads/2022/03/NJ-Tech-Council-Rising-Star-Award-260px-1.png" alt="">
-            <img class="h-32 w-auto mx-3" src="https://info.hracuity.com/wp-content/uploads/2022/03/Top-10-HR-Tech-Outlook-2019.png" alt="">
-            <img class="h-32 w-auto mx-3" src="https://info.hracuity.com/wp-content/uploads/2022/03/GRC-2020.png" alt="">
-            <img class="h-20 w-auto mx-3" src="https://info.hracuity.com/wp-content/uploads/2022/03/Gold.png" alt="">
+            <img class="h-28 w-auto mx-4" src="https://info.hracuity.com/wp-content/uploads/2022/03/gptw.png" alt="">
+            <img class="h-32 w-auto mx-4" src="https://info.hracuity.com/wp-content/uploads/2022/03/FortuneBestSmallMedium2021.jpeg" alt="">
+            <img class="h-32 w-auto mx-4" src="https://info.hracuity.com/wp-content/uploads/2022/03/FortuneBestNewYork2021.jpeg" alt="">
+            <img class="h-32 w-auto mx-4" src="https://info.hracuity.com/wp-content/uploads/2022/03/Optimas-2018-Gold-Award-260px.png" alt="">
+            <img class="h-32 w-auto mx-4" src="https://info.hracuity.com/wp-content/uploads/2022/03/NJ-Tech-Council-Rising-Star-Award-260px-1.png" alt="">
+            <img class="h-32 w-auto mx-4" src="https://info.hracuity.com/wp-content/uploads/2022/03/Top-10-HR-Tech-Outlook-2019.png" alt="">
+            <img class="h-32 w-auto mx-4" src="https://info.hracuity.com/wp-content/uploads/2022/03/GRC-2020.png" alt="">
+            <img class="h-20 w-auto mx-4" src="https://info.hracuity.com/wp-content/uploads/2022/03/Gold.png" alt="">
           </div>
         </div>
         </div>
     </div>
 
+  <!--User Reviews-->
     <div class="relative max-w-full mx-auto flex flex-row px-92 py-12 bg-blue-10">
       <div class="max-w-full mx-auto items-center">
         <div class="lg:text-center">
           <h2 class="mt-2 leading-8 font-bold text-blue-902 text-2xl pb-6">User Reviews</h2>
           <div class="flex container mx-auto items-center">
-            <img class="h-28 w-auto mx-3" src="https://info.hracuity.com/wp-content/uploads/2022/03/gptw.png" alt="">
-            <img class="h-32 w-auto mx-3" src="https://info.hracuity.com/wp-content/uploads/2022/03/FortuneBestSmallMedium2021.jpeg" alt="">
-            <img class="h-32 w-auto mx-3" src="https://info.hracuity.com/wp-content/uploads/2022/03/FortuneBestNewYork2021.jpeg" alt="">
-            <img class="h-32 w-auto mx-3" src="https://info.hracuity.com/wp-content/uploads/2022/03/Optimas-2018-Gold-Award-260px.png" alt="">
-            <img class="h-32 w-auto mx-3" src="https://info.hracuity.com/wp-content/uploads/2022/03/NJ-Tech-Council-Rising-Star-Award-260px-1.png" alt="">
+            <a class="hover:opacity-80" href="https://www.capterra.com/p/111531/HR-Acuity-On-Demand/reviews/" target="_blank">
+            <img class="mx-2 w-32 h-10" src="https://info.hracuity.com/wp-content/uploads/2022/03/capterra-big.png" alt="">
+            </a>
+            <a class="hover:opacity-80" href="https://www.getapp.com/hr-employee-management-software/a/hr-acuity-on-demand/" target="_blank">
+            <img class="mx-2 w-24 h-16" src="https://info.hracuity.com/wp-content/uploads/2022/03/get-app-new.png" alt="">
+          </a>
+          <a class="hover:opacity-80" href="https://www.getapp.com/hr-employee-management-software/a/hr-acuity-on-demand/" target="_blank">
+            <img class="mx-2 w-24 h-32" src="https://info.hracuity.com/wp-content/uploads/2022/03/users-love-us.png" alt="">
+          </a>
+          <a class="hover:opacity-80" href="https://www.g2.com/products/hr-acuity/reviews" target="_blank">
+            <img class="mx-2 w-24 h-32" src="https://info.hracuity.com/wp-content/uploads/2022/03/high-performer-fall-2021.png" alt="">
+          </a>
+          <a class="hover:opacity-80" href="https://www.g2.com/products/hr-acuity/reviews" target="_blank">
+            <img class="mx-2 w-24 h-32" src="https://info.hracuity.com/wp-content/uploads/2022/03/high-performer-winter-2022.png" alt="">
+          </a>
           </div>
         </div>
         </div>
