@@ -20,7 +20,6 @@
     <script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
     <!--test-->
-
     <title>Home - HR Acuity</title>
   </head>
   <body class="font-Poppins overflow-x-hidden">
@@ -219,11 +218,8 @@
 <div class="py-12 bg-grey-100">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="lg:text-center">
-      <h2 class="mt-2 text-4xl leading-8 font-boldi tracking-tight text-blue-901 sm:text-4xl pb-6">Manage employee issues – the right way
-      </h2>
-      <p class="text-blue-901 text-xl">You can’t prevent every issue from happening, but you can</p>
-      <p class="text-blue-901 text-xl">proactively address how you respond. Get the power of</p>
-      <p class="text-blue-901 text-xl">built-in intelligence, templates and reporting.</p>
+      <h2 class="mt-2 text-yxl font-xbold text-blue-901 pb-6">Manage employee issues – <a class="underline underline-offset-8">the right way</a></h2>
+      <p class="text-blue-901 text-xl px-81">You can’t prevent every issue from happening, but you can proactively address how you respond. Get the power of built-in intelligence, templates and reporting.</p>
     </div>
     </div>
 </div>
@@ -321,6 +317,11 @@
           loop: true,
           items:3,
 
+          navigation: {
+            nextEl: '#swiper-button-next',
+            prevEl: '#swiper-button-prev',
+          },
+
           breakpoints: {
             640: {
               slidesPerView: 1,
@@ -339,7 +340,16 @@
       class="relative block mx-97 flex-row mb-24">
 
       <div class="swiper-container relative block" x-ref="container">
+        <div class="inline-flex">
+        <div id="swiper-button-prev" type="button" class="text-white border border-gray-300 hover:border-black w-12 bg-white px-3 py-2 mb-2">
+          <img src="./imgs/ArrowLeft.png" alt="">
+        </div>
+        <div id="swiper-button-next" type="button" class="text-white border border-gray-300 hover:border-black w-12 bg-white px-3 py-2 mb-2">
+          <img src="./imgs/ArrowRight.png" alt=""> 
+        </div>
+      </div>
         <div class="swiper-wrapper">
+          </button>
           <div class="swiper-slide px-8 py-8">
             <div class="flex flex-col">
               <div class="flex-shrink-0 relative block bg-gray-901">
@@ -413,25 +423,23 @@
 <!--Customer Spotlight-->
 <section>
   <div class="relative container mx-auto pt-8 bg-blue-905 max-w-6xl mb-36 h-96">
-    <h2 class="text-center font-extrabold text-4xl text-blue-901 font-Poppins">Customer spotlight</h2>
+    <h3 class="text-center font-xbold text-yxl text-blue-901 py-2">Customer spotlight</h3>
     <div class="container relative">
-      <button id="playButton" class="absolute modal-open ml-97 mt-56 mx-52 w-18 h-18 bg-blue-901 rounded-full grid place-items-center hover:bg-purple-400 transition">
-        <svg class="ml-1 w-6" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M15 7.26795C16.3333 8.03775 16.3333 9.96225 15 10.7321L3 17.6603C1.66667 18.4301 1.01267e-06 17.4678 1.07997e-06 15.9282L1.68565e-06 2.0718C1.75295e-06 0.532196 1.66667 -0.430054 3 0.339746L15 7.26795Z" fill="white"></path>
-        </svg>
+      <button id="playButton" class="modal-open absolute ml-97 mt-56 mx-52 w-18 h-18 bg-blue-901 rounded-full grid place-items-center hover:bg-blue-905 transition">
+        <img class="ml-2 w-6 h-8" fill="none" src="./imgs/playicon.png"></img>
       </button>
       <img class="mx-auto mt-6" src="https://info.hracuity.com/wp-content/uploads/2022/03/video-overlay.jpg">
     </div>
   </div>
   <!--Modal-->
   <div class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center ">
-    <div class="modal-overlay relative w-full h-full bg-blue-550 opacity-95 ">
+    <div class="modal-overlay absolute w-full h-full bg-blue-25 opacity-100">
       <div class="modal-container fixed w-full h-full z-50">
-        <div id="modalclose" class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-orange text-lg z-50">
-          <svg class="h-12 w-12 text-orange" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"></path>  <line x1="18" y1="6" x2="6" y2="18"></line>  <line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-10 text-lg z-50">
+          <svg class="h-12 w-12 text-red-901 hover:text-green-901" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"></path>  <line x1="18" y1="6" x2="6" y2="18"></line>  <line x1="6" y1="6" x2="18" y2="18"></line></svg>
         </div>
         <!-- Add margin if you want to see grey behind the modal-->
-        <div class="container mx-auto h-auto p-4 bg-blue-550">
+        <div class="container mx-auto h-auto p-4 bg-blue-25">
           <!--Body-->
           <video id="myVideo" class="" src="https://f.hubspotusercontent20.net/hubfs/2930928/Bay-area%20Video%20October%202021_Final.mp4" controls="controls" controlslist="nodownload" poster="https://info.hracuity.com/wp-content/uploads/2022/03/video-overlay.jpg"></video>
         </div>
@@ -439,28 +447,30 @@
     </div>
   </div>
   <script>
+
     var openmodal = document.querySelectorAll('.modal-open');
     var video = document.getElementById("myVideo");
     for (var i = 0; i < openmodal.length; i++) {
       openmodal[i].addEventListener('click', function(event){
-      document.body.style.overflowY = "hidden";
+        document.body.style.overflowY = "hidden";
       event.preventDefault();
       toggleModal();
       video.currentTime=0;
       video.play();
-      })
+      });
     }
-    const overlay = document.querySelector('.modal-overlay')
-    overlay.addEventListener('click', toggleModal)
-    
-    var closemodal = document.querySelectorAll('#modalclose')
+
+    var closemodal = document.querySelectorAll('.modal-close')
     for (var i = 0; i < closemodal.length; i++) {
       closemodal[i].addEventListener('click', toggleModalClose);
     }
-    var isEscape = false;
+
+    const overlay = document.querySelector('.modal-overlay')
+    overlay.addEventListener('click', toggleModalClose)
+    
     document.onkeydown = function(evt) {
       evt = evt || window.event;
-
+      var isEscape = false;
       if ("key" in evt) {
       isEscape = (evt.key === "Escape" || evt.key === "Esc")
       } else {
@@ -471,6 +481,7 @@
         toggleModalClose();
       }
     };
+
     function toggleModal() {
       const body = document.querySelector('body');
       const modal = document.querySelector('.modal');
@@ -478,11 +489,17 @@
       modal.classList.toggle('pointer-events-none');
       body.classList.toggle('modal-active');
     }
+
     function toggleModalClose() {
-      toggleModal();
+      const body = document.querySelector('body');
+      const modal = document.querySelector('.modal');
+      modal.classList.toggle('opacity-0');
+      modal.classList.toggle('pointer-events-none');
+      body.classList.toggle('modal-active');
       document.body.style.overflowY = "auto";
       video.pause();
     }
+
   </script>
 </section>
 
