@@ -1,6 +1,20 @@
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 module.exports = {
   theme: {
-    // ...
+    screens: {
+      'xs': '475px',
+      ...defaultTheme.screens,
+
+      'sm': '576px',
+      // => @media (min-width: 576px) { ... }
+
+      'md': '960px',
+      // => @media (min-width: 960px) { ... }
+
+      'lg': '1440px',
+      // => @media (min-width: 1440px) { ... }
+    },
   },
   plugins: [
     require('@tailwindcss/aspect-ratio'),
@@ -18,8 +32,8 @@ module.exports = {
         "bookmark-white": "#f7f7f7",    
       },
     },
-    fontFamily: {
-      Poppins: ["Poppins, sans-serif"],
+    fontSize: {
+      'yxl': '2.5rem',
     },
     container: {
       center: true,

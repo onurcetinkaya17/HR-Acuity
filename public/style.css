@@ -11762,10 +11762,6 @@ video {
   font-weight: 700;
 }
 
-.font-xbold {
-  font-weight: 750;
-}
-
 .font-extrabold {
   font-weight: 800;
 }
@@ -15261,6 +15257,11 @@ video {
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+}
+
+.py-17 {
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
 }
 
 .py-3 {
@@ -20082,6 +20083,11 @@ video {
   left: 16rem;
 }
 
+.inset-y-70 {
+  top: 17.6rem;
+  bottom: 17.6rem;
+}
+
 .inset-y-72 {
   top: 18rem;
   bottom: 18rem;
@@ -20100,6 +20106,11 @@ video {
 .inset-x-80 {
   right: 20rem;
   left: 20rem;
+}
+
+.inset-y-90 {
+  top: 22.1rem;
+  bottom: 22.1rem;
 }
 
 .inset-y-96 {
@@ -25338,6 +25349,10 @@ video {
 
 .text-blue-903 {
   color: #8cb4cf;
+}
+
+.text-blue-904 {
+  color: #5084a5;
 }
 
 .text-indigo-50 {
@@ -108281,6 +108296,11 @@ video {
     line-height: 1;
   }
 
+  .lg\:text-yxl {
+    font-size: 2.6rem;
+    line-height: 3.8rem;
+  }
+
   .lg\:leading-3 {
     line-height: .75rem;
   }
@@ -108939,6 +108959,11 @@ video {
   .lg\:mx-96 {
     margin-left: 24rem;
     margin-right: 24rem;
+  }
+
+  .lg\:mx-97 {
+    margin-left: 26rem;
+    margin-right: 26rem;
   }
 
   .lg\:my-auto {
@@ -109829,6 +109854,10 @@ video {
 
   .lg\:ml-96 {
     margin-left: 24rem;
+  }
+
+  .lg\:ml-97 {
+    margin-left: 32rem;
   }
 
   .lg\:mt-auto {
@@ -111691,6 +111720,16 @@ video {
     padding-right: 20rem;
   }
 
+  .lg\:px-81 {
+    padding-left: 21.5rem;
+    padding-right: 21.5rem;
+  }
+
+  .lg\:px-92 {
+    padding-left: 23rem;
+    padding-right: 23rem;
+  }
+
   .lg\:py-96 {
     padding-top: 24rem;
     padding-bottom: 24rem;
@@ -112199,6 +112238,10 @@ video {
     padding-left: 18rem;
   }
 
+  .lg\:pl-76 {
+    padding-left: 19rem;
+  }
+
   .lg\:pt-80 {
     padding-top: 20rem;
   }
@@ -112227,8 +112270,16 @@ video {
     padding-bottom: 24rem;
   }
 
+  .lg\:pl-92 {
+    padding-left: 23.5rem;
+  }
+
   .lg\:pl-96 {
     padding-left: 24rem;
+  }
+
+  .lg\:pl-100 {
+    padding-left: 26rem;
   }
 
   .lg\:pt-px {
@@ -124081,6 +124132,10 @@ video {
 
   .lg\:w-96 {
     width: 24rem;
+  }
+
+  .lg\:w-97 {
+    width: 33rem;
   }
 
   .lg\:w-auto {
