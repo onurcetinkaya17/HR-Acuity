@@ -1,0 +1,544 @@
+<!doctype html>
+<html lang="en" class="">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="utilities.css">
+  <link rel="stylesheet" href="responsive.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+  <title>Home - HR Acuity</title>
+  <link rel="icon" href="https://info.hracuity.com/wp-content/uploads/2022/03/site-favicon-150x150.png" sizes="32x32">
+</head>
+
+<body>
+   <!-- Navbar -->
+   <div class="navbar">
+      <div class="container flex">
+         <img width="600" height="86" src="https://info.hracuity.com/wp-content/uploads/2022/03/HR_Acuity_Logo.png" class="attachment-full size-full" alt="" loading="lazy" srcset="https://info.hracuity.com/wp-content/uploads/2022/03/HR_Acuity_Logo.png 600w, https://info.hracuity.com/wp-content/uploads/2022/03/HR_Acuity_Logo-300x43.png 300w" sizes="(max-width: 600px) 100vw, 600px">
+         <button class="btn" role="button" onclick="popup_open();">Book a Demo</button>
+      </div>
+   </div>
+   <!-- /Navbar -->
+   <!-- Hero Section -->
+   <section class="hero">
+      <div class="background-overlay"></div>
+      <div class="container">
+         <div class="hero-text">
+            <h1>Employee Relations</h1>
+            <h2>Management Software</h2>
+            <div class="paragraph">
+              <p>Document employee relations issues consistently to mitigate risk</p>
+              <p>Standardize ER processes for more transparent data and fairer outcomes</p>
+              <p>Analyze trends to proactively identify potential hot spots</p> 
+            </div>        
+         </div>
+          <div class="buttons">
+           <button class="btn" role="button" onclick="popup_open();">Book a Demo</button>
+           <button class="btn btn-2" role="button" onclick="video_open();">See How It Works</button>
+          </div>
+      </div>
+   </section>
+   <!-- /Hero Section -->
+
+   <!-- Organizations -->
+   <section class="organizations">
+      <div class="container">
+         <h1>Organizations like yours are building better workplaces with HR Acuity</h1>
+         <!-- Slider main container -->
+         <div id="organizations-slider" class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+               <!-- Slides -->
+               <div class="swiper-slide">
+                  <img class="swiper-slide-image qualcom-size" src="imgs/Qualcomm-logo.svg" alt="Qualcom">
+               </div>
+               <div class="swiper-slide">
+                  <img class="swiper-slide-image cosmo-size" src="imgs/cosmo-logo.svg" alt="Cosmo">
+               </div>
+               <div class="swiper-slide">
+                  <img class="swiper-slide-image becu-size" src="imgs/becu-logo.svg" alt="Becu">
+               </div>
+               <div class="swiper-slide">
+                  <img class="swiper-slide-image stc-size" src="imgs/savethechildren-logo.svg" alt="SaveTheChildren">
+               </div>
+               <div class="swiper-slide">
+                  <img class="swiper-slide-image vector-size" src="imgs/vector-logo.svg" alt="Vector">
+               </div>
+               <div class="swiper-slide">
+                  <img class="swiper-slide-image sheetz-size" src="imgs/sheetz-logo.svg" alt="Sheetz">
+               </div>
+               <div class="swiper-slide">
+                  <img class="swiper-slide-image lyft-size" src="imgs/lyft-logo.svg" alt="Lyft">
+               </div>
+               <div class="swiper-slide">
+                  <img class="swiper-slide-image linkedin-size" src="imgs/linkedin-logo.svg" alt="LinkedIn">
+               </div>
+               <div class="swiper-slide">
+                  <img class="swiper-slide-image akamai-size" src="imgs/akamai-logo.svg" alt="Akamai">
+               </div>
+            </div>
+         </div>
+         <div class="org">
+            <a target="_blank" href="https://www.hracuity.com/about-us/customers">See More Customers</a> 
+            <svg width="1.8rem" height="auto" viewBox="0 0 29 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <path d="M28.0607 13.0607C28.6464 12.4749 28.6464 11.5251 28.0607 10.9393L18.5147 1.3934C17.9289 0.807611 16.9792 0.807611 16.3934 1.3934C15.8076 1.97919 15.8076 2.92893 16.3934 3.51472L24.8787 12L16.3934 20.4853C15.8076 21.0711 15.8076 22.0208 16.3934 22.6066C16.9792 23.1924 17.9289 23.1924 18.5147 22.6066L28.0607 13.0607ZM0 13.5H27V10.5H0V13.5Z" fill="#265F82"/>
+            </svg>
+         </div>
+      </div>
+   </section>
+   <!-- /Organizations -->
+   <!-- Manage Employee -->
+   <section class="manage-employee">
+      <div class="container">
+         <h2>Manage employee issues – 
+            <span class="underline">the right way</span>
+         </h2>
+         <p>You can’t prevent every issue from happening, but you can proactively address how you respond. Get the power of built-in intelligence, templates and reporting.</p>
+      </div>
+   </section>
+   <!-- /Manage Employee -->
+   <!-- Easily Document -->
+   <section class="easily-document">
+      <div class="container grid">
+         <!-- Accordion main container -->
+         <div>
+            <div class="accordion">
+               <div class="accordion-item">
+                 <button id="0" onClick="changeSlide(this);" aria-expanded="false"><span class="accordion-title">Easily document and manage employee cases</span></button>
+                 <div class="accordion-content">
+                   <img class="accordion-image" src="https://info.hracuity.com/wp-content/uploads/2022/03/Easily-document-and-manage-employee-cases.svg" width="100%">
+                   <p>Get intuitive access, designed by ER experts, to all your cases and investigations</p>
+                 </div>
+               </div>
+               <div class="accordion-item">
+                 <button id="1" onClick="changeSlide(this)"  aria-expanded="false"><span class="accordion-title">Conduct best-practice investigations</span></button>
+                 <div class="accordion-content">
+                   <img class="accordion-image" src="https://info.hracuity.com/wp-content/uploads/2022/03/Conduct-best-practice-investigations-2.svg" width="100%">
+                   <p >Ensure consistent, fair process with best practices and templates built in</p>
+                 </div>
+               </div>
+               <div class="accordion-item">
+                 <button id="2" onClick="changeSlide(this)" aria-expanded="false"><span class="accordion-title">Uncover trends with forward-looking analytics</span></button>
+                 <div class="accordion-content">
+                   <img class="accordion-image" src="https://info.hracuity.com/wp-content/uploads/2022/03/Uncover-trends-with-forward-looking-analytics-1.svg" width="100%">
+                   <p>Inform decisions with in-depth data, analytics and reporting</p>
+                 </div>
+               </div>
+               <div class="accordion-item">
+                 <button id="3" onClick="changeSlide(this)" aria-expanded="false"><span class="accordion-title">Drive events-based intelligence</span></button>
+                 <div class="accordion-content">
+                   <img class="accordion-image" src="https://info.hracuity.com/wp-content/uploads/2022/03/Drive-events-based-intelligence.svg" width="100%">
+                   <p>Link reporting to industry or custom events</p>
+                 </div>
+               </div>
+             </div>
+            <button class="btn" role="button" onclick="popup_open();">Book a Demo</button>
+         </div>
+         <div>
+            <!-- Slider main container -->
+            <div id="easily-document-slider" class="swiper">
+               <!-- Additional required wrapper -->
+               <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                     <img class="swiper-slide-image" src="imgs/table-1.svg" alt="table-1">
+                  </div>
+                  <div class="swiper-slide">
+                     <img class="swiper-slide-image" src="imgs/table-2.svg" alt="table-2">
+                  </div>
+                  <div class="swiper-slide">
+                     <img class="swiper-slide-image" src="imgs/table-3.svg" alt="table-3">
+                  </div>
+                  <div class="swiper-slide">
+                     <img class="swiper-slide-image" src="imgs/table-4.svg" alt="table-4">
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- /Easily Document -->
+   <!-- Testimonial -->
+   <section class="testimonial">
+      <div class="container">
+         <div id="testimonial-slider" class="swiper">
+            <div class="swiper-wrapper">
+               <div class="swiper-slide">
+                  <div class="testimonial-text">
+                   <p>I continually get requests for data from throughout my organization. The analytics capability in the HR Acuity platform is strong and I can get the exact data that I need quickly. I can easily discover trends and metrics that help the organization to be more proactive and get ahead of issues.</p>
+                  </div>
+                  <div class="testimonial-footer">
+                     <div class="testimonial-image">
+                        <img src="https://info.hracuity.com/wp-content/uploads/2022/03/chris-tets.png" class=""/>
+                     </div>
+                     <cite class="testimonial-cite">
+                        <span class="testimonial-name">Christopher Vogelheim</span>
+                        <span class="testimonial-title">Associate Director of HR & Employee Relations, Grifols</span>
+                     </cite>
+                  </div>
+               </div>
+               <div class="swiper-slide">
+                  <div class="testimonial-text">
+                   <p>We use HR Acuity across our ER team for performance management and investigations. It has improved our overall functionality as a team and allowed for us to track and analyze our work on a globally consistent basis.</p>
+                  </div>
+                  <div class="testimonial-footer">
+                     <div class="testimonial-image">
+                        <img src="https://info.hracuity.com/wp-content/uploads/2022/03/Monica-LinkedIn.jpeg" class=""/>
+                     </div>
+                     <cite class="testimonial-cite">
+                        <span class="testimonial-name">Monica Gollins</span>
+                        <span class="testimonial-title">Senior Employee Relations Business Partner, LinkedIn</span>
+                     </cite>
+                  </div>
+               </div>
+               <div class="swiper-slide">
+                  <div class="testimonial-text">
+                   <p>When I was introduced to the HR Acuity platform in 2018 through a demo, I was completely blown away by its capabilities. I realized right then that it was head and shoulders above any other solution because it was supported by an organization that lives and breathes ER – it’s an ER solution that’s built by ER professionals for ER professionals.</p>
+                  </div>
+                  <div class="testimonial-footer">
+                     <div class="testimonial-image">
+                        <img src="https://info.hracuity.com/wp-content/uploads/2022/03/steph.png" class=""/>
+                     </div>
+                     <cite class="testimonial-cite">
+                        <span class="testimonial-name">Stephanie Miller, JD, MBA,</span>
+                        <span class="testimonial-title">Head of Employee Relations, Akamai Technologies</span>
+                     </cite>
+                  </div>
+               </div>
+            </div>
+            <div type="button" id="swiperbuttonprev" class="swiperbuttonprev"></div>
+            <div type="button" id="swiperbuttonnext" class="swiperbuttonnext"> </div>
+         </div>
+      </div>
+   </section>
+   <!-- /Testimonial -->
+   <!-- Customer Spotlight -->
+   <section class="customer">
+      <div class="container">
+         <div class="blue-container">
+            <h1>Customer spotlight</h1>
+            <div class="container-relative">
+              <img class="videoOverlay" width="874" onclick="lightbox_open();" height="520" src="https://info.hracuity.com/wp-content/uploads/2022/03/video-overlay.jpg" loading="lazy" srcset="https://info.hracuity.com/wp-content/uploads/2022/03/video-overlay.jpg 874w, https://info.hracuity.com/wp-content/uploads/2022/03/video-overlay-300x178.jpg 300w, https://info.hracuity.com/wp-content/uploads/2022/03/video-overlay-768x457.jpg 768w" sizes="(max-width: 874px) 100vw, 874px">
+              <div class="embed-play" role="button" onclick="lightbox_open();" aria-label="Play Video" tabindex="0">
+                 <i aria-hidden="true" class="eicon-play">
+                 </i>
+              </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- /Customer Spotlight -->
+
+   <!-- Make Best -->
+   <section class="makebest">
+      <div class="container">
+         <section class="makebestheader">
+            <div class="container">
+               <h1>Make best practice your process</h1>
+            </div>
+         </section>
+         <section class="makebestrows-1">
+            <div class="container">
+               <div class="animation">
+                  <figure class="image-box-img">
+                     <img width="13" height="13" src="https://info.hracuity.com/wp-content/uploads/2022/03/green-surface.svg" alt="" loading="lazy">
+                  </figure>
+                  <h2>Documentation</h2>
+                  <p class="image-box-description">
+                     <a target="_blank" href="https://www.hracuity.com/what-we-offer/documentation">Learn More</a>
+                  </p>
+               </div>
+               <div class="exp">
+                  <p>Document issues with consistency, store all information in a centralized repository and access your data whenever you need it.</p>
+               </div>
+            </div>
+         </section>
+         <section class="makebestrows-2">
+            <div class="container">
+               <div class="animation">
+                  <figure class="image-box-img">
+                     <img width="13" height="13" src="https://info.hracuity.com/wp-content/uploads/2022/03/green-surface.svg" alt="" loading="lazy">
+                  </figure>
+                  <h2>Investigations</h2>
+                  <p class="image-box-description">
+                     <a target="_blank" href="https://www.hracuity.com/what-we-offer/documentation">Learn More</a>
+                  </p>
+               </div>
+               <div class="exp">
+                  <p>Drive comprehensive fact-finding and standardize interviews with our built-in methodology.</p>
+               </div>
+            </div>
+         </section>
+         <section class="makebestrows-2">
+            <div class="container">
+               <div class="animation">
+                  <figure class="image-box-img">
+                     <img width="13" height="13" src="https://info.hracuity.com/wp-content/uploads/2022/03/green-surface.svg" alt="" loading="lazy">
+                  </figure>
+                  <h2>Reporting & Analytics</h2>
+                  <p class="image-box-description">
+                     <a target="_blank" href="https://www.hracuity.com/what-we-offer/documentation">Learn More</a>
+                  </p>
+               </div>
+               <div class="exp">
+                  <p>Access instant insights, identify patterns and measure against rich benchmarking data.</p>
+               </div>
+            </div>
+         </section>
+      </div>
+   </section>
+   <button class="makebestbtn" role="button" onclick="popup_open();">Book a Demo</button>
+   <!-- /Make Best -->
+   <!-- Contact Us -->
+   <!--<section class="contactus">
+      <div class="container">
+         <h1>Reach out to us!</h1>
+         <h2>Ready to get started? Need more information?</h2>
+         <form class="form" id="form">
+            <div class="input-control">
+               <label for="firstname">First name</label>
+               <input type="text">
+            </div>
+            <div class="input-control">
+               <label for="email">Email*</label>
+               <input id="email" name="email" onClick="onSubmit()" type="email" placeholder value autocomplete="email" inputmode="email" required="required">
+               <div id="emailEmptyError" class="error">Please complete this required field.</div>
+               <div id="emailFormatError" class="error">Email must be formatted correctly.</div>
+            </div>
+            <div class="input-control">
+               <label for="numberofemp">Number of employees*</label>
+               <select id="numberofemp" required>
+                  <option value="0" disabled selected>Please Select</option>
+                  <option value="1">1-500</option>
+                  <option value="2">501-1,000</option>
+                  <option value="3">1,001-5,000</option>
+                  <option value="4">5,001-10,000</option>
+                  <option value="5">10,001-49,999</option>
+                  <option value="6">50,000+</option>
+               </select>
+               <div class="error"></div>
+            </div>
+            <div class="input-control">
+               <label for="iminterestedin">I'm Interested In...*</label>
+               <select id="iminterestedin" required>
+                  <option value="0" disabled selected="">Please Select</option>
+                  <option value="1">Requesting a Demo</option>
+                  <option value="2">Pricing Details</option>
+                  <option value="3">Customer Support</option>
+                  <option value="4">Employment Opportunities</option>
+                  <option value="5">Other</option>
+               </select>
+               <div class="error"></div>
+            </div>
+            <div class="checkdiv">
+               <input class="checkbox" type="checkbox">
+               <label class="remember" for="remember">Signup for our newsletter!</label>
+            </div>
+               <input class="btn" type="submit" onClick="onSubmit()" value="Submit">
+         </form>
+         <div class="privacypolicy">
+            <p>We need your contact information to contact you about our products and services. You may unsubscribe from these communications any time. For information on how to unsubscribe, as well as our privacy practices, see our <a href="https://www.hracuity.com/privacy-policy" target="_blank">Privacy Policy</a></p>
+         </div>
+      </div>
+   </section>-->
+   <!-- /Contact us -->
+   <section class="contactus">
+      <div class="container">
+         <h1>Reach out to us!</h1>
+         <h2>Ready to get started? Need more information?</h2>
+         <form class="form" id="form">
+            <div class="input-control">
+               <label for="firstname">First name</label>
+               <input type="text">
+            </div>
+            <div class="input-control">
+               <label for="email">Email*</label>
+               <input id="email" name="email" type="email">
+               <div class="error"></div>
+            </div>
+            <div class="input-control">
+               <label for="numberofemp">Number of employees*</label>
+               <select id="numberofemp">
+                  <option value="0" disabled selected>Please Select</option>
+                  <option value="1">1-500</option>
+                  <option value="2">501-1,000</option>
+                  <option value="3">1,001-5,000</option>
+                  <option value="4">5,001-10,000</option>
+                  <option value="5">10,001-49,999</option>
+                  <option value="6">50,000+</option>
+               </select>
+               <div class="error"></div>
+            </div>
+            <div class="input-control">
+               <label for="iminterestedin">I'm Interested In...*</label>
+               <select id="iminterestedin">
+                  <option value="0" disabled selected="">Please Select</option>
+                  <option value="1">Requesting a Demo</option>
+                  <option value="2">Pricing Details</option>
+                  <option value="3">Customer Support</option>
+                  <option value="4">Employment Opportunities</option>
+                  <option value="5">Other</option>
+               </select>
+               <div class="error"></div>
+            </div>
+            <div class="checkdiv">
+               <input class="checkbox" type="checkbox">
+               <label class="remember" for="remember">Signup for our newsletter!</label>
+            </div>
+               <button class="btn" role="button" >Submit</button>
+         </form>
+         <div class="privacypolicy">
+            <p>We need your contact information to contact you about our products and services. You may unsubscribe from these communications any time. For information on how to unsubscribe, as well as our privacy practices, see our <a href="https://www.hracuity.com/privacy-policy" target="_blank">Privacy Policy</a></p>
+         </div>
+      </div>
+   </section>
+   <!-- Awards -->
+   <section class="awards">
+      <div class="container">
+         <h1>Awards</h1>
+         <div class="logos">
+            <img class="gptw" src="https://info.hracuity.com/wp-content/uploads/2022/03/gptw.png" alt="">
+            <img class="fortune" src="https://info.hracuity.com/wp-content/uploads/2022/03/FortuneBestSmallMedium2021.jpeg" alt="">
+            <img class="fortune" src="https://info.hracuity.com/wp-content/uploads/2022/03/FortuneBestNewYork2021.jpeg" alt="">
+            <img class="optimas" src="https://info.hracuity.com/wp-content/uploads/2022/03/Optimas-2018-Gold-Award-260px.png" alt="">
+            <img class="njtech" src="https://info.hracuity.com/wp-content/uploads/2022/03/NJ-Tech-Council-Rising-Star-Award-260px-1.png" alt="">
+            <img class="hrtech" src="https://info.hracuity.com/wp-content/uploads/2022/03/Top-10-HR-Tech-Outlook-2019.png" alt="">
+            <img class="exp2019" src="https://info.hracuity.com/wp-content/uploads/2022/03/GRC-2020.png" alt="">
+            <img class="gold" src="https://info.hracuity.com/wp-content/uploads/2022/03/Gold.png" alt="">
+         </div>
+      </div>
+   </section>
+   <!-- /Awards -->
+   <!-- User Reviews -->
+   <section class="userreviews">
+      <div class="container">
+         <h1>User Reviews</h1>
+         <div class="logos">
+            <a href="https://www.capterra.com/p/111531/HR-Acuity-On-Demand/reviews/" target="_blank">
+               <img class="capterra" src="https://info.hracuity.com/wp-content/uploads/2022/03/capterra-big.png" alt="">
+            </a>
+            <a href="https://www.getapp.com/hr-employee-management-software/a/hr-acuity-on-demand/" target="_blank">
+               <img class="getapp" src="https://info.hracuity.com/wp-content/uploads/2022/03/get-app-new.png" alt="">
+            </a>
+            <a href="https://www.getapp.com/hr-employee-management-software/a/hr-acuity-on-demand/" target="_blank">
+               <img class="usersloveus" src="https://info.hracuity.com/wp-content/uploads/2022/03/users-love-us.png" alt="">
+            </a>
+            <a href="https://www.g2.com/products/hr-acuity/reviews" target="_blank">
+               <img class="hp2011" src="https://info.hracuity.com/wp-content/uploads/2022/03/high-performer-fall-2021.png" alt="">
+            </a>
+            <a href="https://www.g2.com/products/hr-acuity/reviews" target="_blank">
+               <img class="hp2012" src="https://info.hracuity.com/wp-content/uploads/2022/03/high-performer-winter-2022.png" alt="">
+            </a>
+         </div>
+      </div>
+   </section>
+   <!-- /User Reviews -->
+   <!-- Footer -->
+   <section class="footer">
+      <div class="container">
+         <h1>Copyright ©2022 HR Acuity.</h1>
+      </div>
+   </section>
+   <!-- /Footer -->
+
+   <!-- How It Works Popup-->
+   <div class="lightbox" id="open">
+      <div class="lightbox-content">
+         <button class="close-button" id="close" onclick="video_close();">
+            <i class="eicon-close"></i>
+         </button>
+         <div class="lightbox-video">
+            <div class="video-container"> 
+               <div class="fit-aspect-ratio">
+                  <video id="howItWorks" src="https://2930928.fs1.hubspotusercontent-na1.net/hubfs/2930928/2020/HR-Acuity-Demo-10.mp4" autoplay="autoplay" ></video>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- /How It Works Popup-->
+   <!-- The Video Popup Lightbox -->
+   <div class="lightbox" id="light">
+      <div class="lightbox-content">
+         <button class="close-button" id="fade" onclick="lightbox_close();">
+         </button>
+         <div class="lightbox-video">
+            <div class="video-container">
+               <div class="fit-aspect-ratio">
+                  <video id="videoHR" src="https://f.hubspotusercontent20.net/hubfs/2930928/Bay-area%20Video%20October%202021_Final.mp4" autoplay="autoplay" controls="controls" controlslist="nodownload" poster="https://info.hracuity.com/wp-content/uploads/2022/03/video-overlay.jpg"></video>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- /The Video Popup Lightbox-->
+   <!-- Book A Demo Form Popup -->
+   <div class="popup-modal" id="popup">
+      <div class="popup-content">
+         <div class="popup-message">
+            <div class="popup-location">
+               <div class="contactus">
+                  <div class="container">
+                     <h1>Book a demo</h1>
+                     <h2>Ready to get started? Need more information?</h2>
+                     <div class="form">
+                        <form>
+                           <div class="firstname">
+                              <label for="firstname">First name</label>
+                              <input type="text" required>
+                           </div>
+                           <div class="email">
+                              <label for="email">Email*</label>
+                              <input type="email" required>
+                           </div>
+                           <div class="numberofemp">
+                              <label for="numberofemp">Number of employees*</label>
+                              <select>
+                                 <option value="">Please Select</option>
+                                 <option value="">1-500</option>
+                                 <option value="">501-1,000</option>
+                                 <option value="">1,001-5,000</option>
+                                 <option value="">5,001-10,000</option>
+                                 <option value="">10,001-49,999</option>
+                                 <option value="">50,000+</option>
+                              </select>
+                           </div>
+                           <div class="iminterestedin">
+                              <label for="iminterestedin">I'm Interested In...*</label>
+                              <select>
+                                 <option value="">Please Select</option>
+                                 <option value="">Requesting a Demo</option>
+                                 <option value="">Pricing Details</option>
+                                 <option value="">Customer Support</option>
+                                 <option value="">Employment Opportunities</option>
+                                 <option value="">Other</option>
+                              </select>
+                           </div>
+                           <div class="submit">
+                              <input class="checkbox" type="checkbox">
+                              <label class="remember" for="remember">Signup for our newsletter!</label>
+                           </div>
+                           <button class="btn" role="button" >Submit</button>
+                        </form>
+                     </div>
+                     <div class="privacypolicy">
+                        <p>We need your contact information to contact you about our products and services. You may unsubscribe from these communications any time. For information on how to unsubscribe, as well as our privacy practices, see our <a href="https://www.hracuity.com/privacy-policy" target="_blank">Privacy Policy</a></p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         <button class="popup-close-button" onclick="popup_close();"></button>
+         </div>
+      </div>
+   </div>
+   <!-- /Book A Demo Form Popup-->
+
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script src="input.js"></script>
+
+</body>
+</html>
